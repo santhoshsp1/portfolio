@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="san.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1><p><h4> Hi. I am Santhosh student of sri paramakalyani college</h4></p>
+    </header>
+	 
+	 <div class="profile">
+            <img src="san.jpg" alt="Profile Picture">
+	</div>
+	
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+		<h2>About Me</h2>
+        <p> I am santhosh, i completed my higher studies at Jeeva Montessori Matric Higher secondary school. 
+               I am intrested in coding and I would like to become a software engineer. Now I am studing at Sri Paramakalyani College.
+(BCA)Bachelor of computer application.(Manonmaniyam sundaranar University). For me known languages are Tamil,English.
+My Hobbies are hearing music. <br><br>		   
+			  Aim: It feild</p>
+    </section>
+    
+    </section>
+    <section id="projects">
+        <h2>Project </h2> <h4>Online Course Management system</h4>
+        <h2>Education </h2> <h4> Completed 12th std at : Jeeva Matriculation Higher Secondary School</h4>
+		<h4> Student of Sri Paramakalyani College (BCA) </h4>
+		<h2>Skill : </h2> <h4>Python <br><br>C++<br><br>c</h4>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+       <p>Phone:  9677561493</p>
+	   <p>Email:  santhoshsountharajan@gmail.com</p>
+    </section>
+	<footer>
+        <p>&copy; 2023 Santhosh </p>
+    </footer>
+    <script>
+
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+       
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            
+            const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY;
+
+        
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth' 
+            });
+        }
+    });
+});
+
+	</script>
+</body>
+</html>
+
